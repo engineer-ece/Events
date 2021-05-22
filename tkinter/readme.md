@@ -13,7 +13,26 @@
        side = TOP,LEFT,BOTTOM,RIGHT
        fill = X,Y,BOTH,NONE 
        expand = True,False
-      
+   
+   ### 2. Grid(row,column,rowspan,columnspan,padx,pady,ipadx,ipady,sticky)
+   [code](https://github.com/engineer-ece/Python/blob/main/tkinter/grid.py)
+   
+       row        = no.of rows 
+       column     = no.of column
+       rowspan    = no.of row join
+       columnspan = no.of column join 
+       padx       = border X size between the cell 
+       pady       = border Y size between the cell 
+       ipadx      = X side of cell changes 
+       ipady      = Y side of cell changes
+       sticky     = Position like, N,E,S,W,NE,NW,SE,SW 
+       
+       x = event.x_root - root.winfo_rootx()
+       y = event.y_root - root.winfo_rooty()
+       z = root.grid_location(x,y) 
+       print(root.grid_slaves(z[1],z[0])[0]['text']) # to get the widget from grid
+   
+       
        
 
 
