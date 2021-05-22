@@ -32,7 +32,19 @@
        z = root.grid_location(x,y) 
        print(root.grid_slaves(z[1],z[0])[0]['text']) # to get the widget from grid
    
-       
+   ### 3. Place(x,y,width,height,bordermode,relx,rely,relwidth,relheight,anchor)
+   [code](https://github.com/engineer-ece/Python/blob/main/tkinter/place.py)
+      
+       x          = widget x position to screen
+       y          = widget y position to screen
+       width      = widget width
+       height     = widget height
+       relx       = relx [0.0 - 1.0] offset for widget x position
+       rely       = rely [0.0 - 1.0] offset for widget y position
+       relwidth   = relwidth [0.0 - 1.0] offset for widget width position
+       relheight  = relheight [0.0 - 1.0] offset for widget height position
+       anchor     = N,E,S,W,NE,NW,SE,SW
+       bordermode = INSIDE,OUTSIDE
        
 
 
