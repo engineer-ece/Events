@@ -7,3 +7,13 @@ def lists(lst, m=0):
        else:
            print('  ' * m + '+-' + l.title )
 ```
+
+
+```python
+   def note(lst,m=0):
+   for l in lst:     
+       if type(l) is list:
+           note(l,m+1)
+       else:
+           print('    '*m+ ' ' + ". ".join(l.split(":")))
+```
